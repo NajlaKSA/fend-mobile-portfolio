@@ -417,6 +417,7 @@ var resizePizzas = function(size) {
       default:
         console.log("bug in changeSliderLabel");
     }
+    // replaced querySelector with getElementById.
   }
 
   changeSliderLabel(size);
@@ -500,7 +501,7 @@ function logAverageFrame(times) {   // times is the array of User Timing measure
 function updatePositions() {
   frame++;
   window.performance.mark("mark_start_frame");
-
+//replaced this line out of the loop since there's no need to recalculate it at every iteration.
   var items = document.getElementsByClassName('mover');
   var scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
   for (var i = 0; i < items.length; i++) {

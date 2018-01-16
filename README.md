@@ -6,7 +6,7 @@ after optimiziation the pagespeed insight's score is over 90.
 
 I did this by changing:
 * inline style within html doc.
-* resricted print.css to the printing screen only using media attribute.
+* resricted _print.css_ to the printing screen only using media attribute.
 check the result out.
 
 
